@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+}
+
+/* Header section */
+.header {
+  background-color: rgb(135, 2, 2);
+  padding: 20px;
+  text-align: center;
+}
+
+/* About section */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 40px;
+}
+
+.about h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  padding:15px;
+  transition: all 0.5s ease-in-out;
+}
+.about h1:hover{
+    background-color: #333;
+    color:#fff;
+}
+
+.about p {
+  font-size: 22px;
+  margin-bottom: 20px;
+  width: 65%;
+  text-align: center;
+}
+
+/* Social media section */
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(135, 2, 2);
+  gap: 10px;
+  padding: 20px;
+}
+
+.social a {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    gap:20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  margin: 10px;
+}
+
+.facebook {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V7.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0"></path></svg>');
+    transition: transform 0.5s;
+}
+.instagram {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.98 0H7.02C3.14 0 0 3.14 0 7.02v9.96C0 20.86 3.14 24 7.02 24h9.96c3.88 0 7.02-3.14 7.02-7.02V7.02C24 3.14 20.86 0 16.98 0zm4.64 16.98c0 2.56-2.08 4.64-4.64 4.64H7.02c-2.56 0-4.64-2.08-4.64-4.64V7.02C2.38 4.46 4.46 2.38 7.02 2.38h9.96c2.56 0 4.64 2.08 4.64 4.64v9.96zM12 5.84c-3.4 0-6.16 2.76-6.16 6.16s2.76 6.16 6.16 6.16 6.16-2.76 6.16-6.16S15.4 5.84 12 5.84zm0 10.2c-2.22 0-4.04-1.82-4.04-4.04s1.82-4.04 4.04-4.04 4.04 1.82 4.04 4.04-1.82 4.04-4.04 4.04zm6.56-11.88c0 .88-.72 1.6-1.6 1.6s-1.6-.72-1.6-1.6c0-.88.72-1.6 1.6-1.6s1.6.72 1.6 1.6"></path></svg>');
+    transition: transform 0.5s;
+}
+
+.facebook:hover  {
+  transform: scale(1.5);
+}
+.instagram:hover  {
+    transform: scale(1.5);
+}
+  
+
+/* Developers section */
+.developers {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 40px;
+  gap: 30px
+}
+
+.developer {
+  margin: 20px;
+  text-align: center;
+}
+
+.developer img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  transition: transform 0.5s;
+}
+
+.developer img:hover {
+  transform: scale(1.5);
+
+}
+
+.developer h3 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.developer p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+.button {
+  display: block;
+  width: 50%;
+  padding: 10px;
+  border: none;
+
+  text-align: center;
+  background-color: rgb(135, 2, 2);
+  color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition-property: width;
+  transition-duration: 0.75s;
+}
+.button:is(:hover, :focus){
+  width: 100%;
+}
+
+footer {
+    padding: 15px;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
